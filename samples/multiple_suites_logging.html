@@ -28,20 +28,7 @@
   
   <link rel="stylesheet" type="text/css" href="../helium/site/icofont.min.css" />
     <link rel="stylesheet" type="text/css" href="../helium/site/laika-helium.css" />
-    <style>
-div.terminal {
-  color: white;
-  background-color: black;
-}
-
-div.terminal pre {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  overflow: auto
-}
-
-</style>
+    <link rel="stylesheet" type="text/css" href="../assets/custom.css" />
   <script src="../helium/site/laika-helium.js"></script>
   
   
@@ -182,15 +169,15 @@ div.terminal pre {
 }</span></code></pre>
         <p>The report would look something like this:</p>
         <div class='terminal'><pre>
-<span style='color: cyan'>repl.MdocSessionMdocAppMyAnotherSuite</span>
-<span style='color: red'>-&nbsp;</span>failure&nbsp;should&nbsp;print&nbsp;logs&nbsp;<span style='color: lightgray'><b>9ms</span></b>
-
 <span style='color: cyan'>repl.MdocSessionMdocAppMySuite</span>
-<span style='color: green'>+&nbsp;</span>logging&nbsp;for&nbsp;success&nbsp;<span style='color: lightgray'><b>12ms</span></b>
+<span style='color: green'>+&nbsp;</span>logging&nbsp;for&nbsp;success&nbsp;<span style='color: lightgray'><b>8ms</span></b>
+
+<span style='color: cyan'>repl.MdocSessionMdocAppMyAnotherSuite</span>
+<span style='color: red'>-&nbsp;</span>failure&nbsp;should&nbsp;print&nbsp;logs&nbsp;<span style='color: lightgray'><b>12ms</span></b>
 
 <span style='color: red'>*************</span>FAILURES<span style='color: red'>*************</span>
 <span style='color: cyan'>repl.MdocSessionMdocAppMyAnotherSuite</span>
-<span style='color: red'>-&nbsp;</span>failure&nbsp;should&nbsp;print&nbsp;logs&nbsp;<span style='color: lightgray'><b>9ms</span></b><br/><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(multiple_suites_logging.md:41)<br/><br/>&nbsp;&nbsp;}&nbsp;yield&nbsp;expect(x.length&nbsp;&gt;&nbsp;20)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;false<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WPSLmAXDw2</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;[INFO]&nbsp;&nbsp;17:08:41&nbsp;[multiple_suites_logging.md:38]&nbsp;Starting&nbsp;the&nbsp;test...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;1710608921<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purpose&nbsp;-&gt;&nbsp;docs<br/>&nbsp;&nbsp;&nbsp;&nbsp;[DEBUG]&nbsp;17:08:41&nbsp;[multiple_suites_logging.md:40]&nbsp;Generated&nbsp;random&nbsp;string:&nbsp;WPSLmAXDw2
+<span style='color: red'>-&nbsp;</span>failure&nbsp;should&nbsp;print&nbsp;logs&nbsp;<span style='color: lightgray'><b>12ms</span></b><br/><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(multiple_suites_logging.md:41)<br/><br/>&nbsp;&nbsp;}&nbsp;yield&nbsp;expect(x.length&nbsp;&gt;&nbsp;20)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;false<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZQfI4eqfrh</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;[INFO]&nbsp;&nbsp;17:34:08&nbsp;[multiple_suites_logging.md:38]&nbsp;Starting&nbsp;the&nbsp;test...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;1710610448<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purpose&nbsp;-&gt;&nbsp;docs<br/>&nbsp;&nbsp;&nbsp;&nbsp;[DEBUG]&nbsp;17:34:08&nbsp;[multiple_suites_logging.md:40]&nbsp;Generated&nbsp;random&nbsp;string:&nbsp;ZQfI4eqfrh
 
 Total&nbsp;2,&nbsp;Failed&nbsp;1,&nbsp;Passed&nbsp;1,&nbsp;Ignored&nbsp;0,&nbsp;Cancelled&nbsp;0
 </pre></div>
