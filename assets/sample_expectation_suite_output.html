@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.terminal {
+  color: white;
+  background-color: black;
+}
+div.terminal pre {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  overflow: auto
+}
+</style>
+<body>
+<div class='terminal'><pre>
+<span style='color: cyan'>repl.MdocSessionMdocAppExpectationsSuite</span>
+<span style='color: green'>+&nbsp;</span>Simple&nbsp;expectations&nbsp;(success)&nbsp;<span style='color: lightgray'><b>21ms</span></b>
+<span style='color: green'>+&nbsp;</span>And/Or&nbsp;composition&nbsp;(success)&nbsp;<span style='color: lightgray'><b>20ms</span></b>
+<span style='color: green'>+&nbsp;</span>Varargs&nbsp;composition&nbsp;(success)&nbsp;<span style='color: lightgray'><b>0ms</span></b>
+<span style='color: green'>+&nbsp;</span>Working&nbsp;with&nbsp;collections&nbsp;(success)&nbsp;<span style='color: lightgray'><b>19ms</span></b>
+<span style='color: green'>+&nbsp;</span>Strict&nbsp;equality&nbsp;(success)&nbsp;<span style='color: lightgray'><b>6ms</span></b>
+<span style='color: green'>+&nbsp;</span>Relaxed&nbsp;equality&nbsp;comparison&nbsp;(success)&nbsp;<span style='color: lightgray'><b>6ms</span></b>
+<span style='color: red'>-&nbsp;</span>Simple&nbsp;expectations&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>28ms</span></b>
+<span style='color: red'>-&nbsp;</span>And/Or&nbsp;composition&nbsp;(failure&nbsp;<span style='color: lightgray'><b>20ms</span></b>
+<span style='color: red'>-&nbsp;</span>Varargs&nbsp;composition&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>5ms</span></b>
+<span style='color: red'>-&nbsp;</span>Working&nbsp;with&nbsp;collections&nbsp;(failure&nbsp;1)&nbsp;<span style='color: lightgray'><b>14ms</span></b>
+<span style='color: red'>-&nbsp;</span>Working&nbsp;with&nbsp;collections&nbsp;(failure&nbsp;2)&nbsp;<span style='color: lightgray'><b>4ms</span></b>
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;1)&nbsp;<span style='color: lightgray'><b>5ms</span></b>
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;2)&nbsp;<span style='color: lightgray'><b>3ms</span></b>
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;3)&nbsp;<span style='color: lightgray'><b>1ms</span></b>
+<span style='color: red'>-&nbsp;</span>Relaxed&nbsp;equality&nbsp;comparison&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>14ms</span></b>
+<span style='color: red'>-&nbsp;</span>Non&nbsp;macro-based&nbsp;expectations&nbsp;<span style='color: lightgray'><b>0ms</span></b>
+<span style='color: red'>-&nbsp;</span>Failing&nbsp;fast&nbsp;expectations&nbsp;<span style='color: lightgray'><b>11ms</span></b>
+
+<span style='color: red'>*************</span>FAILURES<span style='color: red'>*************</span>
+<span style='color: cyan'>repl.MdocSessionMdocAppExpectationsSuite</span>
+<span style='color: red'>-&nbsp;</span>Simple&nbsp;expectations&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>28ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:33)<br /><br />&nbsp;&nbsp;expect(A.B.C.test(z)&nbsp;%&nbsp;7&nbsp;==&nbsp;0)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;15&nbsp;6&nbsp;&nbsp;&nbsp;false</span>
+<span style='color: red'>-&nbsp;</span>And/Or&nbsp;composition&nbsp;(failure&nbsp;<span style='color: lightgray'><b>20ms</span></b><br /><span style='color: red'>&nbsp;[0]&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:42)<br />&nbsp;[0]&nbsp;<br />&nbsp;[0]&nbsp;(expect(1&nbsp;!=&nbsp;2)&nbsp;and&nbsp;expect(2&nbsp;==&nbsp;1))&nbsp;or&nbsp;expect(2&nbsp;==&nbsp;3)</span><br /><br /><span style='color: red'>&nbsp;[1]&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:42)<br />&nbsp;[1]&nbsp;<br />&nbsp;[1]&nbsp;(expect(1&nbsp;!=&nbsp;2)&nbsp;and&nbsp;expect(2&nbsp;==&nbsp;1))&nbsp;or&nbsp;expect(2&nbsp;==&nbsp;3)</span>
+<span style='color: red'>-&nbsp;</span>Varargs&nbsp;composition&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>5ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:52)<br /><br />&nbsp;&nbsp;expect.all(1&nbsp;+&nbsp;1&nbsp;==&nbsp;2,&nbsp;2&nbsp;+&nbsp;2&nbsp;==&nbsp;5,&nbsp;4&nbsp;*&nbsp;2&nbsp;==&nbsp;8)</span>
+<span style='color: red'>-&nbsp;</span>Working&nbsp;with&nbsp;collections&nbsp;(failure&nbsp;1)&nbsp;<span style='color: lightgray'><b>14ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Values&nbsp;not&nbsp;equal:&nbsp;(sample_expectation_suite_output.html:63)<br /><br />&nbsp;&nbsp;</span><span style='color: green'><b>[world]</span></b>&nbsp;&nbsp;|&nbsp;&nbsp;<span style='color: red'><b>[hello]</span></b>
+<span style='color: red'>-&nbsp;</span>Working&nbsp;with&nbsp;collections&nbsp;(failure&nbsp;2)&nbsp;<span style='color: lightgray'><b>4ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:67)<br /><br />&nbsp;&nbsp;exists(Option(39))(i&nbsp;=>&nbsp;expect(i&nbsp;>&nbsp;50))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39</span>
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;1)&nbsp;<span style='color: lightgray'><b>5ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Values&nbsp;not&nbsp;equal:&nbsp;(sample_expectation_suite_output.html:82)<br /><br />&nbsp;&nbsp;</span><span style='color: green'><b>[hello]</span></b>&nbsp;&nbsp;|&nbsp;&nbsp;<span style='color: red'><b>[world]</span></b>
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;2)&nbsp;<span style='color: lightgray'><b>3ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Values&nbsp;not&nbsp;equal:&nbsp;(sample_expectation_suite_output.html:86)<br /><br />&nbsp;&nbsp;</span>List(1,&nbsp;<span style='color: green'><b>[2]</span></b>,&nbsp;3)&nbsp;&nbsp;|&nbsp;&nbsp;List(1,&nbsp;<span style='color: red'><b>[19]</span></b>,&nbsp;3)
+<span style='color: red'>-&nbsp;</span>Strict&nbsp;equality&nbsp;(failure&nbsp;3)&nbsp;<span style='color: lightgray'><b>1ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Values&nbsp;not&nbsp;equal:&nbsp;(sample_expectation_suite_output.html:90)<br /><br />&nbsp;&nbsp;</span>Test(<span style='color: green'><b>[25]</span></b>.0)&nbsp;&nbsp;|&nbsp;&nbsp;Test(<span style='color: red'><b>[50]</span></b>.0)
+<span style='color: red'>-&nbsp;</span>Relaxed&nbsp;equality&nbsp;comparison&nbsp;(failure)&nbsp;<span style='color: lightgray'><b>14ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Values&nbsp;not&nbsp;equal:&nbsp;(sample_expectation_suite_output.html:110)<br /><br />&nbsp;&nbsp;</span>Hello&nbsp;to&nbsp;<span style='color: green'><b>[25]</span></b>.0&nbsp;&nbsp;|&nbsp;&nbsp;Hello&nbsp;to&nbsp;<span style='color: red'><b>[50]</span></b>.0
+<span style='color: red'>-&nbsp;</span>Non&nbsp;macro-based&nbsp;expectations&nbsp;<span style='color: lightgray'><b>0ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;Condition&nbsp;failed&nbsp;(sample_expectation_suite_output.html:115)</span>
+<span style='color: red'>-&nbsp;</span>Failing&nbsp;fast&nbsp;expectations&nbsp;<span style='color: lightgray'><b>11ms</span></b><br /><span style='color: red'>&nbsp;&nbsp;assertion&nbsp;failed&nbsp;(sample_expectation_suite_output.html:121)<br /><br />&nbsp;&nbsp;_&nbsp;<-&nbsp;expect(h.isEmpty).failFast<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello</span>
+
+Total&nbsp;17,&nbsp;Failed&nbsp;11,&nbsp;Passed&nbsp;6,&nbsp;Ignored&nbsp;0,&nbsp;Cancelled&nbsp;0
+</pre></div>
+</body>
+</head>
+</html>
